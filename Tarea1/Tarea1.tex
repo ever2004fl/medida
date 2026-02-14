@@ -38,8 +38,24 @@ Sea $X=\mathbb{Z}$, $S=\{\varnothing\}\cup P(2\mathbb{Z})$, es fácil ver que S 
 
 \paragraph{3}
 \textit{Sean X, Y conjuntos y $S_y$ una $\sigma-$álgebra en Y. Sea $f:X\rightarrow Y$, demuestre que la colección $\{f^{-1}(B):B\in S_y\}$ es una $\sigma-$álgebra }
+i) Como $S_Y$ es una $\sigma$-álgebra, $\varnothing\in S_Y$. Y
+\[
+f^{-1}(\varnothing)=\varnothing,
+\]
+entonces $\varnothing\in\mathcal A$.
 
+ii) Sea $A\in\mathcal A$, entonces existe $B\in S_Y$ tal que $A=f^{-1}(B)$.
+por lo que 
+\[
+A^c=X\setminus f^{-1}(B)=f^{-1}(Y\setminus B)
+\]
+esto por propiedade de funciones, como $S_Y$ es una $\sigma$-álgebra y $B\in S_Y$, entonces $Y\setminus B\in S_Y$.
+Por lo tanto $A^c\in\mathcal A$.
 
+iii) Sea $\{A_n\}_{n=1}^\infty\subseteq\mathcal A$. Para cada $n$ existe $B_n\in S_Y$
+tal que $A_n=f^{-1}(B_n)$. Entonces
+\[\bigcup_{n=1}^\infty A_n=\bigcup_{n=1}^\infty f^{-1}(B_n)=f^{-1}\left(\bigcup_{n=1}^\infty B_n\right).\]
+ por lo tando $\mathcal A$ es una $\sigma$-álgebra
 
 \paragraph{4}
 \textit{Demostrar que $(0,1]=\bigcap\limits_{n\in\mathbb{N}}(0,1+\frac{1}{n})$.}
